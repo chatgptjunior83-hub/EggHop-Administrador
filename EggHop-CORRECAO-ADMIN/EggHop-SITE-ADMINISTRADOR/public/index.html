@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1020"><title>EggHop • Painel do Dono</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/admin.css"><script src="/admin.js" defer></script></head>
+<body><main class="container">
+<header><a class="brand" href="/">🥚 <strong>EGGHOP<span>.</span></strong></a><span class="private">🔐 ADMINISTRADOR</span></header>
+<section id="loginCard" class="card login"><div class="emblem">👑</div><div class="overline">ACESSO PRIVADO</div><h1>Central de aprovações</h1><p>Entre com a senha que você definiu nas variáveis da Netlify. Este site é separado do site dos jogadores. Somente você pode entrar aqui.</p><form id="loginForm"><label for="password">Senha de administrador</label><input id="password" type="password" required autocomplete="current-password" placeholder="Digite sua senha"/><button class="primary" type="submit" id="loginButton">Entrar no painel →</button></form><div id="loginMsg" class="notice"></div></section>
+<section id="dashboard" hidden>
+<div class="dashboard-intro"><div><div class="overline">BEM-VINDO AO CONTROLE DO EGGHOP</div><h1>Solicitações de acesso</h1><p>Confira no TikTok se o nick <strong>e o código</strong> são os mesmos que a pessoa enviou antes de aprovar.</p></div><div class="top-actions"><button id="refresh" class="outline">↻ Atualizar</button><button id="logout" class="outline">Sair</button></div></div>
+<div class="counters"><div class="counter"><span>PENDENTES</span><strong id="countPending">—</strong></div><div class="counter"><span>LIBERADOS</span><strong id="countApproved">—</strong></div><div class="counter"><span>BLOQUEADOS</span><strong id="countBlocked">—</strong></div></div>
+<div class="tabs"><button data-filter="pending" class="tab selected">⏳ Pendentes</button><button data-filter="approved" class="tab">✅ Liberados</button><button data-filter="blocked" class="tab">⛔ Bloqueados</button><button data-filter="all" class="tab">Todos</button></div>
+<div id="requests" class="request-list">Carregando...</div><p class="note">Somente o navegador aprovado poderá acessar o Server Hop depois da sua aprovação. Se a pessoa apagar os cookies ou trocar de aparelho, precisará fazer uma nova solicitação. O login por nick não comprova a posse da conta Roblox.</p><div id="dashMsg" class="notice"></div>
+</section>
+<footer>EggHop Admin • Acesso exclusivo do administrador. O site dos jogadores fica em outro endereço.</footer>
+</main></body></html>
